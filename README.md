@@ -8,7 +8,7 @@ ex. "Add Campaign FirstCampaign" or "Donate Dylan FirstCampaign $100"
 This would lead to an output of a list of campaigns and donors added along with
 amounts tied to those donors and campaigns.FirstCampaign
 
-To run this program, you must have at least Java 8. 
+To run this program, you must have at least Java 8, kotlinc, and gradle.
 
 Make sure you are in the gfm-donation directory.
 
