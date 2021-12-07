@@ -40,27 +40,27 @@ To run the tests and see results, from gfm-donation directory, run:
 To test this program, we would be checking the main areas of function:
 
     -Adding campaigns
-    
+
         -If I use the correct command, a campaign is added with the title used.
-      
+
         -If I use an incorrect command, I receive the correct error message.
-        
+
         -If I use the correct command, but without a campaign title, I receive the correct error message.
-        
+
     -Adding donors
-    
+
         -If I use the correct command, a donor with a donation should be added.
-        
+
         -If I use an incorrect command, I receive the correct error message.
-        
+
         -If I use the correct command, but without a donor name, I receive the correct error message.
-        
+
         -If I use the correct command, but without a campaign title, I receive the correct error message.
-        
+
         -If I use the correct command, but without a donation amount, I receive the correct error message.
-        
+
     -Adding donations under the correct campaign and donors.
-    
+
         -If donors and campaigns are added correctly, the total amount of donations should calculate correctly.
 
 ### Approach
