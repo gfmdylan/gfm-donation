@@ -13,7 +13,7 @@ import java.io.PrintStream
 import java.util.Scanner
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
-import org.junit.Test
+import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions
 
 internal class MainTest {

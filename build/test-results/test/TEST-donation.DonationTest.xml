@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="donation.DonationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-12-07T02:45:43" hostname="pool-100-15-1-152.washdc.fios.verizon.net" time="0.033">
+  <properties/>
+  <testcase name="checkDonorNewDonor()" classname="donation.DonationTest" time="0.028"/>
+  <testcase name="donateCampaignTest()" classname="donation.DonationTest" time="0.002"/>
+  <testcase name="checkDonorRepeatDonor()" classname="donation.DonationTest" time="0.0"/>
+  <testcase name="addDonorTest()" classname="donation.DonationTest" time="0.0"/>
+  <system-out><![CDATA[No campaign with that name was found.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

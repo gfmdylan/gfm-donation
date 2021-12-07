@@ -1,6 +1,6 @@
 package campaign
 
-import org.junit.Test
+import org.junit.jupiter.api.Test
 import com.gfmdonation.main.campaign.Campaign
 import org.junit.jupiter.api.Assertions.*
 

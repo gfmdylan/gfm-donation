@@ -1,4 +1,3 @@
-import jdk.nashorn.internal.objects.NativeRegExp.test
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -16,15 +15,17 @@ repositories {
 dependencies {
     implementation("org.junit.jupiter:junit-jupiter:5.7.0")
     testImplementation(kotlin("test"))
+    testCompileOnly("org.junit.jupiter:junit-jupiter:5.7.0")
 }
 
 tasks.test {
-    useJUnit()
+    useJUnitPlatform()
 }
 
 tasks.withType<KotlinCompile>() {
     kotlinOptions.jvmTarget = "1.8"
 }
+
 
 application {
     mainClass.set("MainKt")

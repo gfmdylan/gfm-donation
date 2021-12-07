@@ -6,9 +6,9 @@ followed by a donor name, campaign title, and donation amount starting with $.
 ex. "Add Campaign FirstCampaign" or "Donate Dylan FirstCampaign $100"
 
 This would lead to an output of a list of campaigns and donors added along with
-amounts tied to those donors and campaigns.FirstCampaign
+amounts tied to those donors and campaigns.
 
-To run this program, you must have at least Java 8. 
+To run this program, you must have at least Kotlin, Java, and JDK 8.
 
 Make sure you are in the gfm-donation directory.
 
@@ -22,7 +22,7 @@ Once the program is compiled, you can run the program against your input.txt fil
 
 Or, you can run the program by entering:
 
-        java -jar App.jar
+        java -jar Main.jar
 
 Followed by individual commands, then ending with Ctrl + D:
 
@@ -32,6 +32,10 @@ Donate Dylan FirstCampaign $100
 Ctrl + D
 
 ### Testing
+
+To run the tests and see results, from gfm-donation directory, run:
+
+        gradle clean test --info
 
 To test this program, we would be checking the main areas of function:
 
