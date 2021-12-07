@@ -18,7 +18,7 @@ Then, compile the program with this command:
 
 Once the program is compiled, you can run the program against your input.txt file with:
 
-        kotlinc src/main -include-runtime -d Main.jar
+        cat input.txt | java -jar Main.jar
 
 Or, you can run the program by entering:
 
