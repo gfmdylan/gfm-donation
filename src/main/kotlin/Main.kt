@@ -1,6 +1,7 @@
 package com.gfmdonation.main
 import com.gfmdonation.main.campaign.Campaign
 import com.gfmdonation.main.donation.Donation
+import java.io.File
 import java.util.*
 import kotlin.jvm.Throws
 
@@ -12,15 +13,34 @@ var donation = Donation(donors)
 var campaign = Campaign(campaigns)
 
 fun main(args: Array<String>) {
-    runApp()
-    scanner.close()
+    val fileName: String? =
+        if (args.isNullOrEmpty()) {
+            null
+        } else {
+            args[0]
+    }
+    val file =
+        if (fileName.isNullOrEmpty()) {
+            null
+        } else {
+            File(fileName)
+    }
+    runApp(file)
 }
 
-fun scan() {
-    while (scanner.hasNextLine()) {
-        var input = scanner.nextLine().split(" ")
-        gatheredInput.add(input)
+fun scan(file: File?) {
+    if (file?.exists() == true) {
+        while (file.readLines().isNotEmpty()) {
+            var input = file.readLines()
+            gatheredInput.add(input)
+        }
+    } else {
+        while (scanner.hasNextLine()) {
+            var input = scanner.nextLine().split(" ")
+            gatheredInput.add(input)
+        }
     }
+    scanner.close()
 }
 
 @Throws(IllegalArgumentException::class)
@@ -55,8 +75,8 @@ fun gather(gatheredInput: MutableList<List<String>>) {
     }
 }
 
-fun runApp() {
-    scan()
+fun runApp(file: File?) {
+    scan(file)
     gather(gatheredInput)
     donation.donorPrint()
     campaign.campaignPrint()

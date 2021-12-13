@@ -20,7 +20,11 @@ Once the program is compiled, you can run the program against your input.txt fil
 
         cat input.txt | java -jar Main.jar
 
-Or, you can run the program by entering:
+Alternatively, you can run the program with: 
+
+        ./gfm-donation input.txt
+
+Lastly, you can run the program by entering:
 
         java -jar Main.jar
 

@@ -1,0 +1,5 @@
+#!/bin/sh
+kotlinc src/main -include-runtime -d Main.jar
+cat input.txt | java -jar Main.jar
+
+
