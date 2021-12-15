@@ -1,5 +1,5 @@
-#!/bin/sh
+#!/bin/bash
 kotlinc src/main -include-runtime -d Main.jar
-cat input.txt | java -jar Main.jar
+cat $1 | java -jar Main.jar
 
 
